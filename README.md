@@ -6,7 +6,9 @@
 ### Decle: TMS1xxx firmware ROM dumping technology 
 ### LambdaMikel: Arduino-based re-implementation of the Microtronic, first round of Microtronic firmware dumping, PCB design
 
+Coming soon.
 
+![Prototype](pics/prototype.jpg) 
 
 
 
