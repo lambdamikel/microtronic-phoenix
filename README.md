@@ -161,7 +161,13 @@ DOT Output 1 or 4, as shown in this picture:
 
 The Phoenix board hence offers these on-board, for convenience (plus
 two extra-buttons, `DIN3` and `DIN4`). The on-board buzzer can also be
-disconnected via the `BUZZ` DIP switch: 
+disconnected via the `BUZZ` DIP switch.
+
+Moreover, both the Neo and Phoenix mode support the CPU speed buttons:
+emulation speed can be decreased (`CPU-` button) and increased (
+`CPU+`). The `RESET` button works in both firmwares as well:
+
+![CPU and Reset Buttons](pics/cpu-buttons.jpg) 
 
 ### Neo Mode
 
@@ -225,11 +231,13 @@ The Neo firmware contains the following `PGM` programs; these are:
 - ``PGM E`` : Prime Numbers, from the "Computerspiele 2094" book, page 58
 - ``PGM F`` : Game 17+4 BlackJack, from the "Computerspiele 2094" book, page 32
 
-Note that, on the original Microtronic and hence in the Phoenix mode (!),
-`PGM 0` performs a self-test, and `PGM 1` and `PGM 2` are used to access the 2095
-Cassette Interface, which is currently not supported by the Phoenix board.
+Note that, on the original Microtronic and hence in Phoenix mode, `PGM
+0` performs a self-test, and `PGM 1` and `PGM 2` are used to access
+the 2095 Cassette Interface, which is currently not supported by the
+Phoenix board. Instead, `PGM 1` and `PGM 2` are used to access
+the EEPROM. 
 
-Moreover, there are no `PGM` demo froms `8` to `F`. 
+Moreover, there are no `PGM` demo programs `8` to `F` in Phoenix mode.
 
 ### Phoenix Mode
 
@@ -387,7 +395,7 @@ contributions to this project! In particular,
     - Frank de Jaeger: 2nd Generation Microtronic PCB
     - Manfred Henf: 2nd Generation Microtronic 3D Design & Printing
     - Martin Sauter: Busch 2095 Cassette Interface Protocol Reengineering & Research
-    _ Lilly (https://github.com/ducatimaus/Busch-2090): Breakpoint & Single Stepping Integration for Uno R3 Version
+    - Lilly (https://github.com/ducatimaus/Busch-2090): Breakpoint & Single Stepping Integration for Uno R3 Version
     - [Björn Rathje](https://github.com/rab-berlin): `HXDZ` op-code bug fix (overflow set to 0 behavior), `DISP` op-code bugfix
 
 
