@@ -164,30 +164,36 @@ two extra-buttons, `DIN3` and `DIN4`). The on-board buzzer can also be
 disconnected via the `BUZZ` DIP switch.
 
 Moreover, both the Neo and Phoenix mode support the CPU speed buttons:
-emulation speed can be decreased (`CPU-` button) and increased (
-`CPU+`). The `RESET` button works in both firmwares as well:
+emulation speed can be decreased (`CPU-`) and increased ( `CPU+`). The
+`RESET` button works in both firmwares as well: 
 
 ![CPU and Reset Buttons](pics/cpu-buttons.jpg) 
 
 ### Neo Mode
 
 In Neo Mode, the hardware emulator has access to the additional
-hardware features on the board: the speaker and EEPROM: - a speaker
-for sound output: like in previous Microtronic emulator versions,
-[vacuous op-codes are used as sound
+hardware features on the board: 
+
+- a **speaker** for sound output: like in previous Microtronic
+emulator versions, [vacuous op-codes are used as sound
 op-codes.](https://github.com/lambdamikel/Busch-2090?tab=readme-ov-file#emulator-sound-output-and-sound-instructions)
 
   ![Speaker and EEPROM](pics/eeprom-speaker-isp.jpg)
 
-- an 256 kBit 24LC256 EEPROM for mass-storage of Microtronic RAM dumps, instead of the 2095 cassette interface. The EEPROM has enough space for 42 complete memory dumps. It is accessed via PGM 1 and PGM 2. **NOTE: to save to or load from the EEPROM, the `PROT`ect switch must be in OFF position!**. Turn the `PROT`ect switch back on after EEPROM operation. See this picture:
+- an 256 kBit 24LC256 **EEPROM** for mass-storage of Microtronic RAM
+  dumps, instead of the 2095 cassette interface. The EEPROM has enough
+  space for 42 complete memory dumps. It is accessed via PGM 1 and PGM
+  2. **NOTE: to save to or load from the EEPROM, the `PROT`ect switch
+  must be in OFF position!**. Turn the `PROT`ect switch back on after
+  EEPROM operation. See this picture:
 
   ![DIP SWITCH](pics/buzzer-switch.jpg)
 
-  Please note that the `CARRY` LED will not work properly with the
-  `PROT` switch in OFF position.
+  **Please note that the `CARRY` LED will not work properly with the
+  `PROT` switch in OFF position.**
 
-- the speaker is also used for key beeps; the `BEEP` button is used to turn on or off
-  key beeps. 
+- the speaker is also used for key beeps; the `BEEP` button is used to
+  turn on or off key beeps.
 
 - 7segment status display: with a suitable 7segment LED display that
 offers controll over the individual digit decimal dots (the NSA 1166
@@ -198,7 +204,8 @@ on the board). The `BEEP` button is used to turn on or off this status
 display; note that this is of course an indepenent feature of the
 display which is independent of its main user interface role in the
 Microtronic (no control of the decimal points with Microtronic
-instructions is possible, and there are no floating point numbers either). 
+instructions is possible, and there are no floating point numbers
+either).
 
    ![Status DOTs](pics/adapter.jpg)
 
