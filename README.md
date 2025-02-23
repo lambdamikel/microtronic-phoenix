@@ -4,7 +4,7 @@
 
 ### [Jason T. Jacques](https://jsonj.co.uk/): TMS1xxx emulator, prototype hardware design and breadboarding, refined Microtronic firmware dumping, authentic Microtronic firmware emulator running the original Microtronic firmware ROM with a TMS1600 emulator
 
-### [Decle](https://forums.atariage.com/profile/46336-decle/): TMS1xxx firmware ROM dumping technology, expert technical advisor
+### [Decle](https://forums.atariage.com/profile/46336-decle/): TMS1xxx firmware ROM dumping technology, TMS1xxx disassembler, expert technical advisor 
 
 ### [Michael A. Wessel](https://www.michael-wessel.info/): Arduino-based re-implementation of the Microtronic, first round of Microtronic firmware dumping, PCB design, software integration 
 
@@ -47,9 +47,9 @@ so-called *test
 mode*](https://hackaday.io/project/194876-exploring-the-science-fair-microcomputer-trainer/log/227981-dumping-the-tms1100),
 which then allows download of the firmware ROM over a serial interface. 
 
-After a lot of trial-and-error, the team finally succeeded in 2025 in
-retrieving the Microtronic firmware ROM, hence opening up the avenue
-of re-creating the original Microtronic on modern hardware. The 
+After a lot of trial-and-error, the team finally succeeded in April
+2024 in retrieving the Microtronic firmware ROM, hence opening up the
+avenue of re-creating the original Microtronic on modern hardware. The
 process is described
 [here](https://hackaday.io/project/197415-microtronic-firmware-rom-archaeology)
 and, much more detailed and technically accurate,
@@ -77,6 +77,21 @@ and experience the original 1981 Busch Microtronic Computer System
 in an as-authentic-as-possible way.  
 
 ![Prototype](pics/phoenix.jpg)
+
+The Phoenix board uses an ATmega 644P-20U clocked at 20 MHz, a 24LC256 
+EEPROM, and an 74LS244 in an abundance of pre-caution for connecting
+the ATmega's GPIO's to the external work of Microtronic INPUT / OUTPUT
+ports.
+
+One can either use an original 6digit 7segment (or really 8segment if
+we include the individual decimal dots for each digit) TIL 393-6
+retro-authentic bubble LED display from Texas Instruments, or the NSA
+1166 from National Instruments as shown in the above picture. As these are
+hard to come by, it is also possible to use a CL3061AG modern LED display
+and an adapter (provided here as well):
+
+![Prototype with Display Adapter](pics/phoenix2.jpg)
+
 
 ## Emulation Modes - NEO vs. PHOENIX 
 
@@ -128,7 +143,7 @@ In Neo Mode, the hardware emulator has access to the additional
 hardware features on the board: the speaker and EEPROM: - a speaker
 for sound output: like in previous Microtronic emulator versions,
 [vacuous op-codes are used as sound
-op-codes.}(https://github.com/lambdamikel/Busch-2090?tab=readme-ov-file#emulator-sound-output-and-sound-instructions)
+op-codes.](https://github.com/lambdamikel/Busch-2090?tab=readme-ov-file#emulator-sound-output-and-sound-instructions)
 
   ![Speaker and EEPROM](pics/eeprom-speaker-isp.jpg)
 
@@ -231,7 +246,18 @@ tbd
 
 ### Gerbers
 
-tbd
+The Gerbers for the Phoenix board
+
+![Phoenix Board](pics/gerbers-phoenix.jpg)
+
+and for the display adapter 
+
+![Phoenix Board](pics/gerbers-display-adapter.jpg)
+
+are available:
+
+- [Phoenix board](gerbers/gerbers-phoenix4.zip)
+- [Display adapter](gerbers/gerbers-til-display-adapter.zip)
 
 
 ## The Firmwares 
@@ -256,6 +282,80 @@ Neo Only, or Phoenix Only, as described above):
 
 ## Microtronic Software 
 
-tbd
+A great new fun Microtronic software project is the re-implementation
+of the Monarch one-armed bandit / rotary slot machine "Monarch" by
+[rab-berlin](https://github.com/rab-berlin): 
+
+[https://github.com/rab-berlin/Monarch2090](https://github.com/rab-berlin/Monarch2090)
+
+Moreover, most of the [historical Microtronic programs can be found
+here](https://github.com/lambdamikel/Busch-2090/tree/master/software), in `.MIC` format.
+
+Michael has [some Microtronic programming videos
+online](https://www.youtube.com/watch?v=7hjPqXKYwDc&list=PLvdXKcHrGqhe_Snxh4nh8RMDz2SiUDCHH);
+the highlight is an implementation of a [recursive version of the
+infamous "Towers of Hanoi" (yes, recursion on the Microtronic is
+possible!)](https://github.com/lambdamikel/towers-of-hanoi).
 
 
+## Acknowledgements
+
+This project benefitted tremendously from the following individuals; we are very grateful for your
+contributions to this project! In particular, 
+
+- Jörg Vallen: 
+
+  The [co-designer of the Busch
+  Microtronic](https://github.com/lambdamikel/Busch-2090/blob/master/manuals/joerg-vallen-diplom.pdf),
+  author of [the Microtronic
+  manuals](https://github.com/lambdamikel/Busch-2090/tree/master/manuals),
+  and CEO of [Busch Modellbau](https://www.busch-modell.de),
+  **Mr. Jörg Vallen**, was very supportive and encouraging of this as
+  well as past Microtronic-related projects - not only allowed he to
+  include the [original Microtronics
+  manuals](https://github.com/lambdamikel/Busch-2090/tree/master/manuals)
+  and
+  [schematics](https://github.com/lambdamikel/Busch-2090/blob/master/manuals/microtronic.jpg),
+  but he also gave us permission to publish the [firmware
+  ROM](https://cdn.hackaday.io/files/1974158446203360/microtronic-81-47.bin.bin)
+  and [firmware
+  disassembly](https://cdn.hackaday.io/files/1974158446203360/really-final-microetronic-firmware-disassembled.txt)
+  as well (disassembled by Decle's TMS1xxx disassembler and
+  hand-corrected by Jason) - **THANK YOU:**
+
+  ```
+    Von: Jörg Vallen <....@busch-model.com>
+    Gesendet: Freitag, 21. Juni 2024 10:37 An: 'Michael Wessel' <.....@gmail.com>
+    Betreff: AW: Neues Microtronic-Video aus dem Saarland
+
+    Sehr geehrter Herr Wessel,  
+
+    ...
+    
+    Finde ich genial, dass Sie auch das Betriebssystem
+    ausgelesen haben. Natürlich dürfen Sie gerne das Betriebssystem
+    auf der Microtronic-Github-Seite veröffentlichen
+
+    ...
+
+    Ihnen alles Gute und weiter erfolgreiches microtronicen…
+
+    Viele Grüße Jörg Vallen
+    ``` 
+    
+
+- [**Contributors to the Microtronic Neo predecessors**](https://github.com/lambdamikel/Busch-2090) include:
+    - Frank de Jaeger: 2nd Generation Microtronic PCB
+    - Manfred Henf: 2nd Generation Microtronic 3D Design & Printing
+    - Martin Sauter: Busch 2095 Cassette Interface Protocol Reengineering & Research
+    _ Lilly (https://github.com/ducatimaus/Busch-2090): Breakpoint & Single Stepping Integration for Uno R3 Version
+    - [Björn Rathje](https://github.com/rab-berlin): `HXDZ` op-code bug fix (overflow set to 0 behavior), `DISP` op-code bugfix
+
+
+- The YouTube channel ["Mein Elektronik Hobby"](https://www.youtube.com/channel/UCEZvUvlcCfJW8mjxwGM8-jw),
+  who demonstrated [PicoRAM-2090](https://www.youtube.com/watch?v=267T5BnslIs)
+  (also see [https://github.com/lambdamikel/picoram2090](https://github.com/lambdamikel/picoram2090))
+  as well as the [2095 Tape Interface / Tape Emulator](https://youtu.be/0MPBtOWTzlk) (joint work
+  with Martin Sauter). 
+
+**Thank you all!**
