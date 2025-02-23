@@ -8,7 +8,7 @@
 
 Coming soon.
 
-![Prototype](pics/prototype.jpg) 
+![Prototype](pics/phoenix.jpg) 
 
 
 
