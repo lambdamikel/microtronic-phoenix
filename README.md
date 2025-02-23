@@ -48,7 +48,7 @@ Until now, an authentic Microtronic emulator was impossible as the
 official firmware had been lost to history, and there was no
 documented procedure for reading out ("dumping") a TMS1600 firmware
 ROM. Firmware ROMs of related TMS1xxx devices (e.g., the SIMON game,
-TI calculators, and the Science Fair Microtroncoller Trainer) had been
+TI calculators, and the Science Fair Microcomputer Trainer) had been
 retrieved in the past, but the process usually involved [destructive
 die-decapping](https://seanriddle.com/decap.html).
 
