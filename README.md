@@ -163,7 +163,6 @@ The Phoenix board hence offers these on-board, for convenience (plus
 two extra-buttons, `DIN3` and `DIN4`). The on-board buzzer can also be
 disconnected via the `BUZZ` DIP switch: 
 
-
 ### Neo Mode
 
 In Neo Mode, the hardware emulator has access to the additional
@@ -286,7 +285,6 @@ are available:
 - [Phoenix board](gerbers/gerbers-phoenix4.zip)
 - [Display adapter](gerbers/gerbers-til-display-adapter.zip)
 
-
 ## Phoenix Firmwares 
 
 The firmware requires the Arduino IDE and a proper installation of 
@@ -307,8 +305,15 @@ Neo Only, or Phoenix Only, as described above):
 
 ![Arduino Settings 2](pics/settings2.jpg)
 
+Please note that you will need to [install the `NewTone` library from
+Tim
+Eckel.](https://bitbucket.org/teckel12/arduino-new-tone/wiki/Home); a
+copy is included [here](microtronic-phoenix-neo-only/NewTone/) for
+convenience.
 
-
+The 7segment LED glyphs / fonts are [Ricardo Batista's
+TM16xxFonts.h](https://github.com/maxint-rd/TM16xx/blob/master/src/TM16xxFonts.h); 
+a copy is included [here](microtronic-phoenix-neo-only/TM16XXFonts.h) for convenience. 
 
 ## Microtronic Software 
 
@@ -374,6 +379,9 @@ contributions to this project! In particular,
     Viele Grüße Jörg Vallen
     ``` 
     
+- Third-party Arduino libraries: 
+    - [The `TM16XXFonts.h` by Ricardo Batista.](https://github.com/maxint-rd/TM16xx/blob/master/src/TM16xxFonts.h)
+    - [The `NewTone` library by Tim Eckel.](https://bitbucket.org/teckel12/arduino-new-tone/wiki/Home)
 
 - [**Contributors to the Microtronic Neo predecessors**](https://github.com/lambdamikel/Busch-2090) include:
     - Frank de Jaeger: 2nd Generation Microtronic PCB
@@ -387,6 +395,8 @@ contributions to this project! In particular,
   who demonstrated [PicoRAM-2090](https://www.youtube.com/watch?v=267T5BnslIs)
   (also see [https://github.com/lambdamikel/picoram2090](https://github.com/lambdamikel/picoram2090))
   as well as the [2095 Tape Interface / Tape Emulator](https://youtu.be/0MPBtOWTzlk) (joint work
-  with Martin Sauter). 
+  with Martin Sauter).
+
+
 
 **Thank you all!**
