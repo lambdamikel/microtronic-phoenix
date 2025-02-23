@@ -10,8 +10,16 @@
 
 ## About
 
-The *Microtronic Phoenix* represents a quantum leap in Microtronic
-emulation. Unlike [previous hardware
+*The *Microtronic Phoenix* represents a quantum leap in Microtronic
+emulation.*
+
+The Microtronic was an educational 4bit single-board computer system,
+which was released in 1981 by the company [Busch
+Modellbau](https://www.busch-modell.de) in West Germany: 
+
+![Microtronic](pics/microtronic.png)
+
+Unlike [previous hardware
 emulators](https://github.com/lambdamikel/Busch-2090) of the [1981
 Busch 2090 Microtronic Computer
 System](https://www.busch-modell.de/information/Microtronic-Computer.aspx
@@ -24,6 +32,12 @@ This breakthrough was made possible by a collaboration of
 T. Jacques](https://jsonj.co.uk/) and [Michael
 Wessel](https://www.michael-wessel.info/), referred to as "the team"
 in the following.
+
+![Phoenix](pics/phoenix.jpg)
+
+This project is shared with the community to enable others to relive
+and experience the original 1981 Busch Microtronic Computer System
+in an as-authentic-as-possible way.  
 
 ## Background & Genesis
 
@@ -71,12 +85,6 @@ retro-authentic new version of the Microtronic on modern hardware,
 running the original 1981 firmware ROM on a TMS1600 emulator on an
 Arduino / ATmega.  **We are hence calling this new Microtronic
 hardware emulator the Phoenix.**
-
-This project is shared with the community to enable them to relive
-and experience the original 1981 Busch Microtronic Computer System
-in an as-authentic-as-possible way.  
-
-![Prototype](pics/phoenix.jpg)
 
 The Phoenix board uses an ATmega 644P-20U clocked at 20 MHz, a 24LC256
 EEPROM, and an 74LS244 in an abundance of pre-caution for connecting
