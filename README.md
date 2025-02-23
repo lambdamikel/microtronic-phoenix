@@ -88,14 +88,15 @@ The three different Phoenix firmwares are provided as Arduino folders
 variants. The [Arduino Legacy IDE IDE
 1.8.19](https://www.arduino.cc/en/software) in combination with
 [MightyCore](https://github.com/MCUdude/MightyCore) are used for
-firmware programming.
+firmware compilation and uploading onto the Phoenix board over the ISP
+header (see below).
 
 One can either use an original 6digit 7segment (or really 8segment if
 we include the individual decimal dots for each digit) TIL 393-6
 retro-authentic bubble LED display from Texas Instruments, or the NSA
-1166 from National Instruments as shown in the above picture. As these are
-hard to come by, it is also possible to use a CL3061AG modern LED display
-and an adapter (provided here as well):
+1166 from National Instruments as shown in the above picture. As these
+are hard to come by, it is also possible to use a CL3061AG modern LED
+display and an adapter (provided here as well):
 
 ![Prototype with Display Adapter](pics/phoenix2.jpg)
 
@@ -104,7 +105,7 @@ and an adapter (provided here as well):
 The original Microtronic firmware can be found [here](microtronic-firmware/).
 
 The files are provided for reference and interest only, and are not
-required for programming the Phoenix firmware.The Phoenix firmware
+required for programming the Phoenix firmware. The Phoenix firmware
 sketches are self-contained, and the [Microtronic firmware ROM
 image](microtronic-firmware/microtronic.bin) is embedded on the
 code-level (instead of on the file level) in them.
@@ -281,8 +282,9 @@ are available:
 The firmware requires the Arduino IDE and a proper installation of 
 [MightyCore](https://github.com/MCUdude/MightyCore).
 
-Programming is done "in system" via the ATmega ISP header:
-[USBasp](https://www.amazon.com/dp/B0885RKVMC): 
+Firmware uploading / programming is done "in system" via the ATmega
+ISP header and, for example,
+[USBasp](https://www.amazon.com/dp/B0885RKVMC):
  
 ![ISP Header](pics/isp-header.jpg)
 
@@ -300,14 +302,15 @@ Neo Only, or Phoenix Only, as described above):
 
 ## Microtronic Software 
 
-A great new fun Microtronic software project is the re-implementation
-of the Monarch one-armed bandit / rotary slot machine "Monarch" by
-[rab-berlin](https://github.com/rab-berlin): 
+A great new fun Microtronic software project is the "Monarch" rotary
+slot machine by [rab-berlin](https://github.com/rab-berlin): 
 
 [https://github.com/rab-berlin/Monarch2090](https://github.com/rab-berlin/Monarch2090)
 
-Moreover, most of the [historical Microtronic programs can be found
-here](https://github.com/lambdamikel/Busch-2090/tree/master/software), in `.MIC` format.
+Moreover, most of the historical Microtronic programs from the
+Microtronic manuals can be found
+[here](https://github.com/lambdamikel/Busch-2090/tree/master/software),
+in `.MIC` format.
 
 Michael has [some Microtronic programming videos
 online](https://www.youtube.com/watch?v=7hjPqXKYwDc&list=PLvdXKcHrGqhe_Snxh4nh8RMDz2SiUDCHH);
