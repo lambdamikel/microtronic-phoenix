@@ -90,7 +90,7 @@ hardware emulator the Phoenix.**
 
 The Phoenix board uses an ATmega 644P-20U clocked at 20 MHz, a 24LC256
 EEPROM, and an 74LS244 in an abundance of pre-caution for connecting
-the ATmega's GPIO's to the external work of Microtronic INPUT / OUTPUT
+the ATmega's GPIOs to the external world of Microtronic INPUT / OUTPUT
 ports. 
 
 The three different Phoenix firmwares are provided as Arduino folders
