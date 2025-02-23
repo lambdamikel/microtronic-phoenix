@@ -131,16 +131,16 @@ and similar in spirit to the [Retro-Authentic Bubble LED Display Microtronic.](h
 
 The Phonix is offered with *three different firmwares:*
 
-- Neo Only: only
-offer the Neo Mode (described below).
+- [Neo Only:](microtronic-phoenix-neo-only/) only offer the Neo Mode
+(described below).
 
-- Phoenix Only: only offer the Phoenix Mode (described below).
+- [Phoenix Only:](microtronic-phoenix-only/) only offer the Phoenix
+  Mode (described below).
 
-- Combined: offer both modes; upon boot or reset (via the `RESET`
-button), the user can select the firmware of choice by answering
-the question for the "**P**hoenix **OS**", **P OS ?**.
-
-  **Push 1 for NEO, and 2 for PHOENIX:**
+- [Combined:](microtronic-phoenix/) **should be the default**; this
+offers both modes; upon boot or reset (via the `RESET` button), the
+user can select the firmware of choice for the "**P**hoenix **OS**" -
+"**P OS ?**"; here, push **1** for NEO, and **2** for PHOENIX:
 
   ![Prototype](pics/os-selector.jpg)
 
@@ -179,9 +179,12 @@ op-codes.](https://github.com/lambdamikel/Busch-2090?tab=readme-ov-file#emulator
 
   ![Speaker and EEPROM](pics/eeprom-speaker-isp.jpg)
 
-- an 256 kBit 24LC256 EEPROM for mass-storage of Microtronic RAM dumps, instead of the 2095 cassette interface. The EEPROM has enough space for 42 complete memory dumps. It is accessed via PGM 1 and PGM 2. **NOTE: to save to or load from the EEPROM, the `PROT` switch must be in OFF position!**. Turn the `PROT` switch back on after the EEPROM operation. See this picture:
+- an 256 kBit 24LC256 EEPROM for mass-storage of Microtronic RAM dumps, instead of the 2095 cassette interface. The EEPROM has enough space for 42 complete memory dumps. It is accessed via PGM 1 and PGM 2. **NOTE: to save to or load from the EEPROM, the `PROT`ect switch must be in OFF position!**. Turn the `PROT`ect switch back on after EEPROM operation. See this picture:
 
   ![DIP SWITCH](pics/buzzer-switch.jpg)
+
+  Please note that the `CARRY` LED will not work properly with the
+  `PROT` switch in OFF position.
 
 - the speaker is also used for key beeps; the `BEEP` button is used to turn on or off
   key beeps. 
@@ -199,14 +202,29 @@ instructions is possible, and there are no floating point numbers either).
 
    ![Status DOTs](pics/adapter.jpg)
 
-  The status LEDs are, from left to right:
-  - program running 
-  - requesting user input (`KIN` active)
-  - breakpoint active (`BKP`) 
-  - CARRY flag
-  - ZERO flag  
-  - 1 Hz clock
+  The status LEDs are, from left to right, i.e., decimal dots for
+  digits 6 to 1: 
+  - digit 6: program running
+  - digit 5: requesting user input (`KIN` active) 
+  - digit 4: breakpoint active (`BKP`) 
+  - digit 3: CARRY flag
+  - digit 2: ZERO flag  
+  - digit 1: 1 Hz clock
 
+  The NSA 1166 only supports display of the decimal dot for digit 3; 
+  hence, only the CARRY flag can be visualized on the NSA 1166
+  display (it only supports a fixed decimal point at digit 3, unlike
+  the TIL 393-6 or the display adapter board, which offer full control
+  over all decimal points of all display digits). 
+
+  It should again be noted that the `PROT`ect switch disables the main
+  CARRY flag LED (left to the 7segment display) if in OFF
+  position. Utilizing this second CARRY flag indicator (i.e., the
+  decimal dot of digit 3) we can hence leave the `PROT`ect switched
+  OFF permanently without loosing CARRY flag visibility. Note that
+  this also work with the NSA 1166, and that this is, as mentioned
+  above, the only status flag that can be visualized on this display. 
+  
   Also note that [the NSA 1166 / TIL 393-6 adapter
 PCB](gerbers/gerbers-til-display-adapter.zip) shown in the above
 picture is provided in this repo, which allows you to use a modern
