@@ -182,10 +182,10 @@ op-codes.](https://github.com/lambdamikel/Busch-2090?tab=readme-ov-file#emulator
 
 - an 256 kBit 24LC256 **EEPROM** for mass-storage of Microtronic RAM
   dumps, instead of the 2095 cassette interface. The EEPROM has enough
-  space for 42 complete memory dumps. It is accessed via PGM 1 and PGM
-  2. **NOTE: to save to or load from the EEPROM, the `PROT`ect switch
-  must be in OFF position!**. Turn the `PROT`ect switch back on after
-  EEPROM operation. See this picture:
+  space for 42 complete memory dumps. It is accessed via `PGM 1` and
+  `PGM 2`. **NOTE: to save to or load from the EEPROM, the `PROT`ect
+  switch must be in OFF position!**. Turn the `PROT`ect switch back on
+  after EEPROM operation. See this picture:
 
   ![DIP SWITCH](pics/buzzer-switch.jpg)
 
