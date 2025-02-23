@@ -44,13 +44,13 @@ in an as-authentic-as-possible way.
 The Microtronic is powered by a mask-programmed Texas Instruments 4bit microcontroller,
 the TMS1600.
 
-So far, an authentic Microtronic emulator was impossible as the
+Until now, an authentic Microtronic emulator was impossible as the
 official firmware had been lost to history, and there was no
 documented procedure for reading out ("dumping") a TMS1600 firmware
 ROM. Firmware ROMs of related TMS1xxx devices (e.g., the SIMON game,
-TI calculators, and the Science Fair Microtroncoller Trainer) had
-been retrieved in the past, but the process usually involved
-[destructive die-decapping](https://seanriddle.com/decap.html).
+TI calculators, and the Science Fair Microtroncoller Trainer) had been
+retrieved in the past, but the process usually involved [destructive
+die-decapping](https://seanriddle.com/decap.html).
 
 More recently, an alternative to destructive chip decapping was
 discovered for dumping the ROM of the [1985 Radio Shack Science Fair
@@ -85,6 +85,8 @@ retro-authentic new version of the Microtronic on modern hardware,
 running the original 1981 firmware ROM on a TMS1600 emulator on an
 Arduino / ATmega.  **We are hence calling this new Microtronic
 hardware emulator the Phoenix.**
+
+## Phoenix Overview 
 
 The Phoenix board uses an ATmega 644P-20U clocked at 20 MHz, a 24LC256
 EEPROM, and an 74LS244 in an abundance of pre-caution for connecting
