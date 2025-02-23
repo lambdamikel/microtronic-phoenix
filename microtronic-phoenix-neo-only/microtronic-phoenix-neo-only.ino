@@ -1176,6 +1176,8 @@ void reset()
 
   dot_output(outputs);
 
+  initialized = true; 
+
 }
 
 void clearMem()
@@ -2360,7 +2362,7 @@ void neo_loop()
       return; 
       break;
      
-    case KEYBT : 
+    case KEYBT : {
       pinMode(SPEAKER_PIN, OUTPUT); 
 
       if (!keybeep)
@@ -2395,7 +2397,7 @@ void neo_loop()
 	else
 	  NewTone(SPEAKER_PIN, 500, FUNTONELENGTH); 
     
-      break; 
+    } break; 
 
     case CPUP : 
       cpu_speed ++; 
@@ -2441,7 +2443,6 @@ void neo_loop()
     
     digitalWrite(CARRY, carry);
     digitalWrite(ZERO , zero);
-
 
   }
  
