@@ -211,19 +211,15 @@ instructions is possible, and there are no floating point numbers either).
   - digit 2: ZERO flag  
   - digit 1: 1 Hz clock
 
-  The NSA 1166 only supports display of the decimal dot for digit 3; 
-  hence, only the CARRY flag can be visualized on the NSA 1166
-  display (it only supports a fixed decimal point at digit 3, unlike
-  the TIL 393-6 or the display adapter board, which offer full control
-  over all decimal points of all display digits). 
+  The NSA 1166 only supports control of the decimal dot for digit 3;
+  hence, only the CARRY flag can be visualized with it.
 
-  It should again be noted that the `PROT`ect switch disables the main
-  CARRY flag LED (left to the 7segment display) if in OFF
-  position. Utilizing this second CARRY flag indicator (i.e., the
-  decimal dot of digit 3) we can hence leave the `PROT`ect switched
-  OFF permanently without loosing CARRY flag visibility. Note that
-  this also work with the NSA 1166, and that this is, as mentioned
-  above, the only status flag that can be visualized on this display. 
+  It should again be noted that, if in OFF position, the `PROT`ect
+  switch disables the main CARRY flag LED (left to the 7segment
+  display). However, utilizing the second CARRY flag indicator (the
+  decimal dot of digit 3) we can hence leave the `PROT`ect switch in a
+  permanent OFF position without loosing CARRY flag visibility. And,
+  this also works with the NSA 1166.
   
   Also note that [the NSA 1166 / TIL 393-6 adapter
 PCB](gerbers/gerbers-til-display-adapter.zip) shown in the above
