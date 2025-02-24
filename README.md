@@ -91,7 +91,9 @@ hardware emulator the Phoenix.**
 The Phoenix board uses an ATmega 644P-20U clocked at 20 MHz, a 24LC256
 EEPROM, and an 74LS244 in an abundance of pre-caution for connecting
 the ATmega's GPIOs to the external world of Microtronic INPUT / OUTPUT
-ports. 
+ports.
+
+![Phoenix Overview](pics/overview.jpg)
 
 The three different Phoenix firmwares are provided as Arduino folders
 / "sketches". See below for descriptions of these three different
@@ -129,7 +131,7 @@ in C](https://github.com/lambdamikel/Busch-2090),
 and similar in spirit to the [Retro-Authentic Bubble LED Display Microtronic.](https://hackaday.io/project/180252-a-retro-authentic-microtronic-rc-202110-winner) 
 - the **Phoenix Mode** is based on [Jason's breadboard Microtronic running the original Microtronic ROM on his TMS1xxx emulator.](https://jsonj.co.uk/project/microtronic/#the-breadboard-microtronic)
 
-The Phonix is offered with *three different firmwares:*
+The Phoenix is offered with *three different firmwares:*
 
 - [Neo Only:](microtronic-phoenix-neo-only/) only offer the Neo Mode
 (described below).
@@ -199,11 +201,11 @@ op-codes.](https://github.com/lambdamikel/Busch-2090?tab=readme-ov-file#emulator
 offers controll over the individual digit decimal dots (the NSA 1166
 from National Instruments does not, but the TIL 393-6 from TI does),
 the 6digit 7segment display also indicates the CPU emulator state, as
-well as the CARRY, ZERO, and 1 HZ CLOCK flags (in addition to the LEDs
-on the board). The `BEEP` button is used to turn on or off this status
-display; note that this is of course an indepenent feature of the
-display which is independent of its main user interface role in the
-Microtronic (no control of the decimal points with Microtronic
+well as the `CARRY`, `ZERO`, and `1 Hz` CLOCK flags (in addition to
+the LEDs on the board). The `BEEP` button is used to turn on or off
+this status display; note that this is of course an indepenent feature
+of the display which is independent of its main user interface role in
+the Microtronic (no control of the decimal points with Microtronic
 instructions is possible, and there are no floating point numbers
 either).
 
@@ -214,18 +216,18 @@ either).
   - digit 6: program running
   - digit 5: requesting user input (`KIN` active) 
   - digit 4: breakpoint active (`BKP`) 
-  - digit 3: CARRY flag
-  - digit 2: ZERO flag  
-  - digit 1: 1 Hz clock
+  - digit 3: `CARRY` flag
+  - digit 2: `ZERO` flag  
+  - digit 1: `1 Hz` clock
 
   The NSA 1166 only supports control of the decimal dot for digit 3;
-  hence, only the CARRY flag can be visualized with it.
+  hence, only the `CARRY` flag can be visualized with it.
 
   It should again be noted that, if in OFF position, the `PROT`ect
-  switch disables the main CARRY flag LED (left to the 7segment
-  display). However, utilizing the second CARRY flag indicator (the
+  switch disables the main `CARRY` flag LED (left to the 7segment
+  display). However, utilizing the second `CARRY` flag indicator (the
   decimal dot of digit 3) we can hence leave the `PROT`ect switch in a
-  permanent OFF position without loosing CARRY flag visibility. And,
+  permanent OFF position without loosing `CARRY` flag visibility. And,
   this also works with the NSA 1166.
   
   Also note that [the NSA 1166 / TIL 393-6 adapter
@@ -293,7 +295,105 @@ You can also load one of the additional demo `PGM`s easily into Phoenix mode.
 
 ## The Phoenix Board
 
-tbd
+In principle, the Phoenix is a one-chip design - everything is driven
+by the ATmega 644P-20U, even the display. The 24LC256 EEPROM is
+optional; the machine will also work without it. The 74LS244 is used
+to decouple the Microtronic inputs and outputs from the ATmega, to
+make it more robust for experimentation - in case of electrical damage
+caused by an electronics experiment gone awry, it is cheaper and
+easier to replace the 74LS244 than the ATmega.
+
+![Phoenix Overview](pics/overview.jpg)
+
+
+### Phoenix Power Supply Options 
+
+There are four options of powering the Phoenix board: 
+
+![Power Supply Options](pics/power.jpg) 
+
+1. With a 9V block battery. The power switch must be in ON position.
+
+2. With an external 9V to 15V DC power supply over the standard
+center-positive 2.5 mm power jack. A 0.5A supply is sufficient.
+The power switch must be in ON position. 
+
+3. Over the `VIN` and `GND` rivet sockets. The power switch must be in ON
+position.
+
+4. Over the AVR ISP header. **In this case, the power switch should be
+in OFF position!**
+
+![ISP Power](pics/isp.jpg) 
+
+For options 1 to 3, a 7805 voltage regulator is used to down-regulate
+the input voltage to the required 5V level.
+
+Note that it is not necessary to remove the 9V battery from the
+Phoenix if another power supply option is used - a standard 1N4001
+rectifier diode prevents all current flow (and hence "charging"
+attempts of the battery) from the external power supply.
+
+### Phoenix `VCC`, `VIN`, and `GND` Outputs
+
+For powering electronics experiments with Busch electronics kits as
+well as with breadboard, the Phoenix board can supply 5V via `VCC`, as
+well as 9V from the battery or any voltage that the external power
+supply provides. The power switch must be in ON position to access
+these voltages. Both `VCC` and `VIN` are available via rivet sockets
+as well as pin headers.
+
+![Power Output Options](pics/power.jpg) 
+
+### Display & Flags
+
+The 6digit 7segment LED display is the primary visual output channel
+of the Microtronic. It should be fitted with a red (or green) lens
+filter to enhance the contrast. 
+
+Left of the display are the `CARRY` and `ZERO` flags.  Note that the
+`CARRY` LED will only function if the `PROT`ect DIP switch is on `ON`
+position. However, the NEO mode can utilize the decimal dot of the
+third display digit from the right to visualize the `CARRY` flag as
+well.
+
+![Display](pics/display.jpg) 
+
+### Inputs & Outputs
+
+The Microtronic input and output ports are available in two form form
+factors: as pin headers for DuPont cables (breadboard friendly), and
+via classical Busch metal rivet sockets for the little yellow
+connector pegs:
+
+![Busch Experiments, Yellow Pegs](pics/experiments.jpg) 
+
+These are the Microtronic outputs (they are controlled via the `DOT` = 
+Data Out op-code); note that `GND` is available via a rivet socket,
+and the `1 Hz` clock signal from the pin header:
+
+![Microtronic Outputs](pics/outputs.jpg)
+
+There are LEDs for the 4 Microtronic outputs, as well as an LED for
+the `1 Hz` clock output. 
+
+The Microtronic inputs are available as pin headers and rivet sockets
+as well; also note the `1 Hz` clock rivet and corresponding LED, as
+well as the power supply socket rivets for external circuits /
+experiments:
+
+![Microtronic Inputs](pics/inputs.jpg)
+
+### Additional Hardware Features
+
+The additional hardware features of the board have already been
+mentioned and explained; in particular, the buzzer, the speaker, and
+the `DIN1` to `DIN4` buttons. The buzzer can be switched off
+via the `BUZZ` DIP switch.
+
+![Speaker and Buzzer](pics/speaker.jpg)
+
+
 
 ### Bill of Material - BOM
 
