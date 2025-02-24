@@ -41,7 +41,7 @@ in an as-authentic-as-possible way.
 
 ## Latest News
 
-- 02-022-2025: "Neo Only" firmware uploaded; "Phoenix Only" and "Combined" will be follow in the next weeks 
+- 02-22-2025: "Neo Only" firmware uploaded; "Phoenix Only" and "Combined" will be follow in the next weeks 
 
 ## Background & Genesis
 
