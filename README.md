@@ -39,6 +39,10 @@ This project is shared with the community to enable others to relive
 and experience the original 1981 Busch Microtronic Computer System
 in an as-authentic-as-possible way.  
 
+## Latest News
+
+- 02-022-2025: "Neo Only" firmware uploaded; "Phoenix Only" and "Combined" will be follow in the next weeks 
+
 ## Background & Genesis
 
 The Microtronic is powered by a mask-programmed Texas Instruments 4bit microcontroller,
