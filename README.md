@@ -391,9 +391,9 @@ buttons. The buzzer can be switched off with the `BUZZ` DIP switch.
 
 ### Bill of Material - BOM
 
-- U1: ATmega 644P-20U + 40 Pin DIP Socket
+- U1: ATmega 644P-20U + 40 Pin DIP Socket, 20 Mhz crystal and matching capacitors (2x 22 pF)
 - U3: 24LC244 + 20 Pin DIP Socket 
-- U4: 7805 + matching capacitors (e.g., 2x 22 uF electrolytic capactiors) 
+- U4: 7805 + matching capacitors (e.g., 2x 22 uF electrolytic) 
 - U6: 74LS244 + 8 Pin DIP Socket 
 - DOT1-DOT4, CARRY, ZERO, 1HZ: 3mm diffused red LED of your choice, e.g., https://www.amazon.com/dp/B0DN1LXQYH
 - R1..R4: 4.7k
