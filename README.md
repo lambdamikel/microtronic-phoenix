@@ -392,9 +392,9 @@ buttons. The buzzer can be switched off with the `BUZZ` DIP switch.
 ### Bill of Material - BOM
 
 - U1: ATmega 644P-20U + 40 Pin DIP Socket, 20 Mhz crystal and matching capacitors (2x 22 pF)
-- U3: 24LC244 + 20 Pin DIP Socket 
+- U3: 74LS244 + 20 Pin DIP Socket 
 - U4: 7805 + matching capacitors (e.g., 2x 22 uF electrolytic) 
-- U6: 74LS244 + 8 Pin DIP Socket 
+- U6 (optional): 24LC256 + 8 Pin DIP Socket 
 - DOT1-DOT4, CARRY, ZERO, 1HZ: 3mm diffused red LED of your choice, e.g., https://www.amazon.com/dp/B0DN1LXQYH
 - 1N4001 Rectifier Diode 
 - R1..R4: 4.7 k 
@@ -404,8 +404,8 @@ buttons. The buzzer can be switched off with the `BUZZ` DIP switch.
 - R13: 75 Ohm - should match the loudspeaker (reduces volume)
 - R14..R20, R22 : 1 k - shold match the LED display 
 - R21: 10 k
-- Speaker: https://www.amazon.com/dp/B07LGKSRCK
-- Buzzer: https://www.amazon.com/dp/B01N7NHSY6
+- Speaker (optional): https://www.amazon.com/dp/B07LGKSRCK
+- Buzzer (optional): https://www.amazon.com/dp/B01N7NHSY6
 - 3-Position DIP Switch: https://www.amazon.com/dp/B0CSN9XDG5
 - 5.5x2.1 Barrel Power Jack: https://www.amazon.com/dp/B081DYQSC9
 - 6x6x5 Push Buttons: https://www.amazon.com/dp/B01CGMP9GY
