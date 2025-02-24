@@ -397,7 +397,7 @@ buttons. The buzzer can be switched off with the `BUZZ` DIP switch.
 - U6: 74LS244 + 8 Pin DIP Socket 
 - DOT1-DOT4, CARRY, ZERO, 1HZ: 3mm diffused red LED of your choice, e.g., https://www.amazon.com/dp/B0DN1LXQYH
 - 1N4001 Rectifier Diode 
-- R1..R4: 4.7k
+- R1..R4: 4.7 k 
 - R5..R9: 1 k - these should match the DOT1-DOT4 and 1HZ LEDs; for modern low-power LEDs such as the ones linked above, 1 k is quite bright (4.7 k might be better)
 - R10..R11: 1 k - these should match the CARRY and ZERO LEDs; for modern low-power LEDs such as the ones linked above, 1 k is quite bright (4.7 k might be better)
 - R12: 100 Ohm - should match the buzzer (reduces volume) 
