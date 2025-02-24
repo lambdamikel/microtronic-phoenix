@@ -389,6 +389,8 @@ buttons. The buzzer can be switched off with the `BUZZ` DIP switch.
 
 ![Speaker and Buzzer](pics/speaker.jpg)
 
+### Bill of Material - BOM
+
 - U1: ATmega 644P-20U + 40 Pin DIP Socket
 - U3: 24LC244 + 20 Pin DIP Socket 
 - U4: 7805 + matching capacitors (e.g., 2x 22 uF electrolytic capactiors) 
@@ -415,9 +417,6 @@ buttons. The buzzer can be switched off with the `BUZZ` DIP switch.
 - Mounting feet: https://www.amazon.com/dp/B07DHHS1Q8
 - USPasp: https://www.amazon.com/dp/B0885RKVMC
 
-### Bill of Material - BOM
-
-tbd
 
 ### Gerbers
 
