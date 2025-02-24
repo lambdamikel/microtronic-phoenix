@@ -106,7 +106,7 @@ header (see below).
 One can either use an original 6digit 7segment (or really 8segment if
 we include the individual decimal dots for each digit) TIL 393-6
 retro-authentic bubble LED display from Texas Instruments, or the NSA
-1166 from National Instruments as shown in the above picture. As these
+1166 from National Semiconductors as shown in the above picture. As these
 are hard to come by, it is also possible to use a CL3061AG modern LED
 display and an adapter (provided here as well):
 
@@ -199,7 +199,7 @@ op-codes.](https://github.com/lambdamikel/Busch-2090?tab=readme-ov-file#emulator
 
 - 7segment status display: with a suitable 7segment LED display that
 offers controll over the individual digit decimal dots (the NSA 1166
-from National Instruments does not, but the TIL 393-6 from TI does),
+from National Semiconductors does not, but the TIL 393-6 from TI does),
 the 6digit 7segment display also indicates the CPU emulator state, as
 well as the `CARRY`, `ZERO`, and `1 Hz` CLOCK flags (in addition to
 the LEDs on the board). The `BEEP` button is used to turn on or off
@@ -298,13 +298,10 @@ You can also load one of the additional demo `PGM`s easily into Phoenix mode.
 In principle, the Phoenix is a one-chip design - everything is driven
 by the ATmega 644P-20U, even the display. The 24LC256 EEPROM is
 optional; the machine will also work without it. The 74LS244 is used
-to decouple the Microtronic inputs and outputs from the ATmega, to
-make it more robust for experimentation - in case of electrical damage
-caused by an electronics experiment gone awry, it is cheaper and
-easier to replace the 74LS244 than the ATmega.
-
-![Phoenix Overview](pics/overview.jpg)
-
+to electrically decouple the Microtronic inputs and outputs from the
+ATmega and make it more robust for experimentation in case an
+experiment goes awry. It is cheaper and easier to replace the 74LS244
+than the ATmega.
 
 ### Phoenix Power Supply Options 
 
@@ -332,15 +329,15 @@ the input voltage to the required 5V level.
 Note that it is not necessary to remove the 9V battery from the
 Phoenix if another power supply option is used - a standard 1N4001
 rectifier diode prevents all current flow (and hence "charging"
-attempts of the battery) from the external power supply.
+attempts) into the 9V battery from the external power supply.
 
 ### Phoenix `VCC`, `VIN`, and `GND` Outputs
 
-For powering electronics experiments with Busch electronics kits as
-well as with breadboard, the Phoenix board can supply 5V via `VCC`, as
-well as 9V from the battery or any voltage that the external power
-supply provides. The power switch must be in ON position to access
-these voltages. Both `VCC` and `VIN` are available via rivet sockets
+For powering electronics experiments with Busch electronics kits
+and/or breadboards, the Phoenix board can supply 5V via `VCC` as well
+as 9V from the battery (or any voltage that the external power supply
+provides) via `VIN`. The power switch must be in ON position to access
+these voltages. Both `VCC` and `VIN` are available from rivet sockets
 as well as pin headers.
 
 ![Power Output Options](pics/power.jpg) 
@@ -349,7 +346,7 @@ as well as pin headers.
 
 The 6digit 7segment LED display is the primary visual output channel
 of the Microtronic. It should be fitted with a red (or green) lens
-filter to enhance the contrast. 
+filter to enhance the contrast.
 
 Left of the display are the `CARRY` and `ZERO` flags.  Note that the
 `CARRY` LED will only function if the `PROT`ect DIP switch is on `ON`
@@ -377,23 +374,46 @@ and the `1 Hz` clock signal from the pin header:
 There are LEDs for the 4 Microtronic outputs, as well as an LED for
 the `1 Hz` clock output. 
 
-The Microtronic inputs are available as pin headers and rivet sockets
-as well; also note the `1 Hz` clock rivet and corresponding LED, as
-well as the power supply socket rivets for external circuits /
-experiments:
+The Microtronic inputs (they can be read with the `DIN` = Data In
+op-code) are available as pin headers and rivet sockets as well; also
+note the `1 Hz` clock rivet and corresponding LED, as well as the
+power supply socket rivets for external circuits / experiments:
 
 ![Microtronic Inputs](pics/inputs.jpg)
 
 ### Additional Hardware Features
 
 The additional hardware features of the board have already been
-mentioned and explained; in particular, the buzzer, the speaker, and
-the `DIN1` to `DIN4` buttons. The buzzer can be switched off
-via the `BUZZ` DIP switch.
+discussed: the buzzer, the speaker, and the `DIN1` to `DIN4`
+buttons. The buzzer can be switched off with the `BUZZ` DIP switch.
 
 ![Speaker and Buzzer](pics/speaker.jpg)
 
-
+- U1: ATmega 644P-20U + 40 Pin DIP Socket
+- U3: 24LC244 + 20 Pin DIP Socket 
+- U4: 7805 + matching capacitors (e.g., 2x 22 uF electrolytic capactiors) 
+- U6: 74LS244 + 8 Pin DIP Socket 
+- DOT1-DOT4, CARRY, ZERO, 1HZ: 3mm diffused red LED of your choice, e.g., https://www.amazon.com/dp/B0DN1LXQYH
+- R1..R4: 4.7k
+- R5..R9: 1 k - these should match the DOT1-DOT4 and 1HZ LEDs; for modern low-power LEDs such as the ones linked above, 1 k is quite bright (4.7 k might be better)
+- R10..R11: 1 k - these should match the CARRY and ZERO LEDs; for modern low-power LEDs such as the ones linked above, 1 k is quite bright (4.7 k might be better)
+- R12: 100 Ohm - should match the buzzer (reduces volume) 
+- R13: 75 Ohm - should match the loudspeaker (reduces volume)
+- R14..R20, R22 : 1 k - shold match the LED display 
+- R21: 10 k
+- Speaker: https://www.amazon.com/dp/B07LGKSRCK
+- Buzzer: https://www.amazon.com/dp/B01N7NHSY6
+- 3-Position DIP Switch: https://www.amazon.com/dp/B0CSN9XDG5
+- 5.5x2.1 Barrel Power Jack: https://www.amazon.com/dp/B081DYQSC9
+- 6x6x5 Push Buttons: https://www.amazon.com/dp/B01CGMP9GY
+- 6digit 7segment LED display with Common Cathode: https://www.aliexpress.us/item/3256803561087338.html, or TI TIL 393, NSA 1166
+- 3x 103 (100 nF) capacitors (or 3x 104 / 1 uF - doesn't matter that much: https://hackaday.com/2025/01/25/capacitor-decoupling-chaos-and-why-you-should-abandon-100-nf/)
+- breakable PIN headers, 2.54 mm pitch: https://www.amazon.com/HiLetgo-20pcs-2-54mm-Single-Header/dp/B07R5QDL8D
+- 9V battery holder box: https://www.amazon.com/dp/B07Q1N2MHT
+- Metal rivets: https://www.digikey.com/en/products/detail/keystone-electronics/46/316215
+- M2 screws + nuts + washers: https://www.amazon.com/dp/B0BX96SMW4
+- Mounting feet: https://www.amazon.com/dp/B07DHHS1Q8
+- USPasp: https://www.amazon.com/dp/B0885RKVMC
 
 ### Bill of Material - BOM
 
