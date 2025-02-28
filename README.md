@@ -204,26 +204,22 @@ op-codes.](https://github.com/lambdamikel/Busch-2090?tab=readme-ov-file#emulator
 
 - 7segment status display: with a suitable 7segment LED display that
 offers controll over the individual digit decimal dots (the NSA 1166
-from National Semiconductors does not, but the TIL 393-6 from TI does),
-the 6digit 7segment display also indicates the CPU emulator state, as
-well as the `CARRY`, `ZERO`, and `1 Hz` CLOCK flags (in addition to
-the LEDs on the board). The `BEEP` button is used to turn on or off
-this status display; note that this is of course an indepenent feature
-of the display which is independent of its main user interface role in
-the Microtronic (no control of the decimal points with Microtronic
-instructions is possible, and there are no floating point numbers
-either).
+from National Semiconductors does not, but the TIL 393-6 from TI
+does), the 6digit 7segment display also indicates the CPU emulator
+state, as well as the `CARRY`, `ZERO`, and `1 Hz` CLOCK flags (in
+addition to the LEDs on the board). The `BEEP` button is used to turn
+on or off this status display - this is a feature which is independent
+of the display's main function as the primary visual user interface. 
 
    ![Status DOTs](pics/adapter.jpg)
 
-  The status LEDs are, from left to right, i.e., decimal dots for
-  digits 6 to 1: 
-  - digit 6: program running
-  - digit 5: requesting user input (`KIN` active) 
-  - digit 4: breakpoint active (`BKP`) 
-  - digit 3: `CARRY` flag
-  - digit 2: `ZERO` flag  
-  - digit 1: `1 Hz` clock
+  The status decimal dot LEDs are, from left to right: 
+  - Dot on digit 6: program running
+  - Dot on digit 5: requesting user input (`KIN` active) 
+  - Dot on digit 4: breakpoint active (`BKP`) 
+  - Dot on digit 3: `CARRY` flag
+  - Dot on digit 2: `ZERO` flag  
+  - Dot on digit 1: `1 Hz` clock
 
   The NSA 1166 only supports control of the decimal dot for digit 3;
   hence, only the `CARRY` flag can be visualized with it.
@@ -243,21 +239,21 @@ are getting very hard to source these days.
 
 The Neo firmware contains the following `PGM` programs; these are: 
 
-- ``PGM 1`` : restore emulator memory from EEPROM ("core restore") 
-- ``PGM 2`` : store / dump emulator memory to EEPROM  ("core dump") 
-- ``PGM 3`` : set clock 
-- ``PGM 4`` : show clock 
-- ``PGM 5`` : clear memory
-- ``PGM 6`` : load ``F01`` (NOPs) into memory 
+- ``PGM 1`` : Load program from EEPROM
+- ``PGM 2`` : Save program to EEPROM 
+- ``PGM 3`` : Set clock 
+- ``PGM 4`` : Show clock 
+- ``PGM 5`` : Clear memory
+- ``PGM 6`` : Load ``F01`` (NOPs) into memory 
 - ``PGM 7`` : Nim Game 
-- ``PGM 8`` : Crazy Counter 
-- ``PGM 9`` : the Electronic Dice, from Microtronic Manual Vol. 1, page 10
-- ``PGM A`` : the Three Digit Counter from Microtronic Manual Vol. 1, page 19 
-- ``PGM B`` : moving LED Light from the Microtronic Manul Vol. 1, page 48  
-- ``PGM C`` : digital input DIN Test Program
-- ``PGM D`` : Lunar Lander (Moon Landing) from the Microtronic Manual Vol. 1, page 23 
-- ``PGM E`` : Prime Numbers, from the "Computerspiele 2094" book, page 58
-- ``PGM F`` : Game 17+4 BlackJack, from the "Computerspiele 2094" book, page 32
+- ``PGM 8`` : Towers of Hanoi (up to 4 disks - see https://github.com/lambdamikel/towers-of-hanoi) 
+- ``PGM 9`` : Electronic Die (Microtronic Manual Vol. 1, page 10) 
+- ``PGM A`` : Three Digit Counter (Microtronic Manual Vol. 1, page 19) 
+- ``PGM B`` : Moving LED Light (Microtronic Manual Vol. 1, page 48) 
+- ``PGM C`` : Digital input DIN Test Program
+- ``PGM D`` : Lunar Lander (Moon Landing) Game (Microtronic Manual Vol. 1, page 23) 
+- ``PGM E`` : Prime Numbers ("Computerspiele 2094", page 58) 
+- ``PGM F`` : 17+4 BlackJack Game ("Computerspiele 2094", page 32) 
 
 Note that, on the original Microtronic and hence in Phoenix mode, `PGM
 0` performs a self-test, and `PGM 1` and `PGM 2` are used to access
