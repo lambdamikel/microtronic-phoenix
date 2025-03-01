@@ -418,6 +418,7 @@ buttons. The buzzer can be switched off with the `BUZZ` DIP switch.
 - M2 screws + nuts + washers: https://www.amazon.com/dp/B0BX96SMW4
 - Mounting feet: https://www.amazon.com/dp/B07DHHS1Q8
 - USPasp: https://www.amazon.com/dp/B0885RKVMC
+- Heatsinks for the 7805 (optional): https://www.amazon.com/dp/B0CG91KN14
 
 
 ### Gerbers
