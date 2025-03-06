@@ -399,7 +399,7 @@ Despite the availability of the much more comfortable EEPROM for
 program storage, this is of some practical utility, as `.MIC` programs
 can be loaded from and stored to SD card, and the FAT32 file system
 facilitates convenient data exchange with the PC or Mac. Programs in
-`.MIC` format can be found [here](## Microtronic Software foo) and
+`.MIC` format can be found [here](## Microtronic Software) and
 loaded into the machine with the 2095 emulator, and then stored to
 EEPROM as well, saving the user from having to type these in.
 
