@@ -403,7 +403,7 @@ facilitates convenient data exchange with the PC or Mac. Programs in
 loaded into the machine with the 2095 emulator, and then stored to
 EEPROM as well, saving the user from having to type these in.
 
-![Phoenix and 2095 emulator](2095-emu-phoenix.jpg) 
+![Phoenix and 2095 emulator](pics/2095-emu-phoenix.jpg) 
 
 Unfortunately, it is not possible to use [the real 2095 interface and
 cassette recorder](https://youtu.be/7KmG64e4DPE), as Phoenix does not
