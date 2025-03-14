@@ -111,9 +111,9 @@ header (see below).
 One can either use an original 6digit 7segment (or really 8segment if
 we include the individual decimal dots for each digit) TIL 393-6
 retro-authentic bubble LED display from Texas Instruments, or the NSA
-1166 from National Semiconductors as shown in the above picture. As these
-are hard to come by, it is also possible to use a CL3061AG modern LED
-display and an adapter (provided here as well):
+1166 from National Semiconductors as shown in the above picture. As
+these are hard to come by, it is also possible to use a CL3061AG or
+SH3661AS modern LED display and an adapter (provided here as well): 
 
 ![Prototype with Display Adapter](pics/phoenix2.jpg)
 
@@ -231,11 +231,8 @@ of the display's main function as the primary visual user interface.
   permanent OFF position without loosing `CARRY` flag visibility. And,
   this also works with the NSA 1166.
   
-  Also note that [the NSA 1166 / TIL 393-6 adapter
-PCB](gerbers/gerbers-til-display-adapter.zip) shown in the above
-picture is provided in this repo, which allows you to use a modern
-CL3061AG instead of the retro-authentic NSA 1166 or TIL 393-6 which
-are getting very hard to source these days.
+  Also note that two NSA 1166 / TIL 393-6 adapters are provided in this
+repo (see picture above): one for the [CL3061AG display](gerbers/gerbers-til-display-adapter.zip), and one for the [SH3661AS diplay](gerbers/gerbers-til-display-adapter2.zip). The bubble LED display are getting very hard to source these days.    
 
 The Neo firmware contains the following `PGM` programs; these are: 
 
