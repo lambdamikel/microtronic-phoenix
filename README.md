@@ -459,7 +459,8 @@ and for the display adapter
 are available:
 
 - [Phoenix board](gerbers/gerbers-phoenix4.zip)
-- [Display adapter](gerbers/gerbers-til-display-adapter.zip)
+- [Adapter for CL3061Ax displays](gerbers/gerbers-til-display-adapter.zip)
+- [Adapter for SG3661Ax displays](gerbers/gerbers-til-display-adapter2.zip)
 
 ## Phoenix Firmwares 
 
