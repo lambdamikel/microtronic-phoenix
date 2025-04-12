@@ -139,8 +139,7 @@ and similar in spirit to the [Retro-Authentic Bubble LED Display Microtronic.](h
 
 The Phoenix is offered with *three different firmwares:*
 
-- [Neo Only:](microtronic-phoenix-neo-only/) only offer the [Neo Mode 
-(described below).](#neo-mode}
+- [Neo Only:](microtronic-phoenix-neo-only/) only offer the [Neo Mode.](#neo-mode}
 
 - [Phoenix Only:](microtronic-phoenix-only/) only offer the Phoenix
   Mode (described below).
@@ -177,7 +176,8 @@ emulation speed can be decreased (`CPU-`) and increased ( `CPU+`). The
 
 ![CPU and Reset Buttons](pics/cpu-buttons.jpg) 
 
-### [Neo Mode](#neo-mode)
+<a name=neo-mode> 
+### Neo Mode
 
 In Neo Mode, the hardware emulator has access to the additional
 hardware features on the board: 
