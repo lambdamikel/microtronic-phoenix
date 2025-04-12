@@ -41,10 +41,9 @@ in an as-authentic-as-possible way.
 
 ## Latest News
 
-- 04-12-2025: All Firmware variants uploaded.
+- 04-12-2025: All Firmware variants uploaded ("Phoenix", "Neo Only", "Phoenix Only"). 
 
-- 02-22-2025: "Neo Only" firmware uploaded; "Phoenix Only" and
-  "Combined" will follow in the next weeks
+- 02-22-2025: "Neo Only" firmware uploaded. 
 
 ## Background & Genesis
 
@@ -140,8 +139,8 @@ and similar in spirit to the [Retro-Authentic Bubble LED Display Microtronic.](h
 
 The Phoenix is offered with *three different firmwares:*
 
-- [Neo Only:](microtronic-phoenix-neo-only/) only offer the Neo Mode
-(described below).
+- [Neo Only:](microtronic-phoenix-neo-only/) only offer the [Neo Mode 
+(described below).](#Subsection-Neo-Mode}
 
 - [Phoenix Only:](microtronic-phoenix-only/) only offer the Phoenix
   Mode (described below).
