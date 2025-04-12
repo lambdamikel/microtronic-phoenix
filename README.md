@@ -41,6 +41,8 @@ in an as-authentic-as-possible way.
 
 ## Latest News
 
+- 04-12-2025: All Firmware variants uploaded.
+
 - 02-22-2025: "Neo Only" firmware uploaded; "Phoenix Only" and
   "Combined" will follow in the next weeks
 
@@ -262,10 +264,42 @@ Moreover, there are no `PGM` demo programs `8` to `F` in Phoenix mode.
 
 ### Phoenix Mode
 
-tbd 
+In this mode the system behaves identical to the original Busch
+Microtronic, executing the original Microtronic firmware using Jason's
+TMS1600 emulator! Hence, [the original Busch
+manuals](https://github.com/lambdamikel/Busch-2090/tree/master/manuals)
+are the best documentation. It is currently only available in German,
+but contemporary GenAI technology will likely have little problems
+with translating it to English.
 
+Note that the **Phoenix runs ~ 30 to 40 % faster than the original
+Microtronic,** but still **significantly slower than in Neo mode at
+max speed.**
 
-### Combined Mode 
+The digital inputs and outputs are fully functional, and even the
+original `PGM 1` and `PGM 2` firmware ROM programs are functional.
+They can be used for accessing the [2095 cassette interface
+emulator.](https://github.com/lambdamikel/microtronic-2095-arduino-emulator)
+Here is [a video demonstrating operation of the original 2095 cassette
+interface](https://youtu.be/7KmG64e4DPE), and [a 2095 emulator
+tutorial by "Mein Elektronic Hobby" (in
+German)](https://youtu.be/0MPBtOWTzlk) for first steps with
+`PGM 1` and `PGM 2`.
+
+Moreover, unlike the Neo version, the self-check `PGM 0` firmware ROM
+program is functional, and can be used for checking proper operation
+of the system, see [reference Manual 1, pp. 5 -
+6](https://github.com/lambdamikel/Busch-2090/blob/master/manuals/anl2090-1.pdf])
+(note that a test harness is required for `PGM 0` operation).
+
+Please note that the `RESET` button is supported, but **the `CPU-`,
+`CPU+`, and `BEEP` buttons are non functional in this mode. They only
+work in Neo mode.**
+
+### Combined Mode
+
+This should be considered the default firmware - it combines the features
+of the Neo and original firmware. 
 
 In addition to the individual features of the Phoenix and Neo modes as
 just described, the combined mode realizes one more *essential

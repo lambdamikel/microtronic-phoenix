@@ -1,6 +1,6 @@
 /*
 
-  Microtronic Phoenix (NEO ONLY)
+  Microtronic Phoenix (NEO + AUTHENTIC) 
 
   Version 1.0 (c) Jason T. Jacques, Decle, Michael A. Wessel 
   04-12-2025 
@@ -26,6 +26,7 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 */
+
 
 #define VERSION "1.0" 
 #define DATE "04-12-2025"  
@@ -2397,7 +2398,7 @@ void neo_loop()
 	else
 	  NewTone(SPEAKER_PIN, 500, FUNTONELENGTH); 
     
-    } break; 
+    }  break; 
 
     case CPUP : 
       cpu_speed ++; 
@@ -2455,12 +2456,51 @@ void neo_loop()
 void setup() {
 
   neo_setup(); 
-  scrollString("microtronic phoenix neo 1-0");
+  scrollString("microtronic phoenix 1-0");
   delay(400);
 
 }
 
 void loop() {
-  neo_loop();
-}
+  
+  while (true) {
 
+    scrollString("NEO 1 OLd 2"); 
+
+    sendString("P OS ?");
+
+    unsigned int firmware = 0;
+
+    do {
+      firmware = get_current_key1();
+    } while (firmware == NO_KEY or (firmware < 1) or (firmware > 2));
+    
+    if ( firmware == 1 ) {
+    
+      neo_loop();
+    
+    } else { 
+      
+      disableTimer();
+          
+      for ( uint16_t addr = 0; addr < 256; addr++) {
+	set_sram1(addr, op[addr]); 
+	set_sram1(512 + addr, arg1[addr]); 
+	set_sram1(256 + addr, arg2[addr]); 
+      }
+
+      phoenix_clock(); 
+      phoenix_loop();
+
+      init();
+      neo_setup(); 
+
+      for ( uint16_t addr = 0; addr < 256; addr++) {
+	op[addr] = get_sram1(addr); 
+	arg1[addr] = get_sram1(512 + addr); 
+	arg2[addr] = get_sram1(256 + addr); 
+      }
+    } 
+  }
+  
+}
