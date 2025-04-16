@@ -41,6 +41,19 @@ in an as-authentic-as-possible way.
 
 ## Latest News
 
+- 04-14-2025: Phoenix in the News: [Microchip
+  Makes](https://x.com/MicrochipMakes/status/1911773123323515386)
+  posted about our project, and the Phoenix is also on the [Hackaday
+  front page](https://www.hackaday.com) as a "Featured Project"
+
+![Linkedin](pics/linkedinpost.jpg)
+
+![Linkedin 2](pics/linkedinpost2.jpg)
+
+![XPost](pics/xpost.jpg)
+
+![Hackaday Featured](pics/featured.jpg)
+
 - 04-12-2025: All Firmware variants uploaded ("Phoenix", "Neo Only", "Phoenix Only"). 
 
 - 02-22-2025: "Neo Only" firmware uploaded. 
