@@ -41,6 +41,10 @@ in an as-authentic-as-possible way.
 
 ## Latest News
 
+- 04-17-2025: [Hackster.io](https://www.hackster.io/news/the-four-bit-busch-microtronic-lives-again-as-the-microtronic-phoenix-complete-with-original-rom-2a5c7ccecba7) has also featured the Microtronic Phonix project - thanks to Gareth Halfacree!
+
+![Hackster](pics/hackster.jpg)
+
 - 04-14-2025: Phoenix in the News: [Microchip
   Makes](https://x.com/MicrochipMakes/status/1911773123323515386)
   posted about our project, and the Phoenix is also on the [Hackaday
