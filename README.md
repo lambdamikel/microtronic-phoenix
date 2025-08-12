@@ -41,6 +41,19 @@ in an as-authentic-as-possible way.
 
 ## Latest News
 
+- 08-12-2025: In the meantime, a number of Makers have successfully
+built their own Phoenix. I am sharing the builds of Venice and Morky
+from the [Classic
+Computing](https://forum.classic-computing.de/forum/index.php?thread/34844-microtronic-phoenix-edition/&pageNo=1)
+Forum here:
+
+![Morcky](pics/morky-1.jpg)
+
+![Venice 1](pics/venice-1.jpeg)
+
+![Venice 2](pics/venice-2.jpeg)
+
+
 - 04-17-2025: [Hackster.io](https://www.hackster.io/news/the-four-bit-busch-microtronic-lives-again-as-the-microtronic-phoenix-complete-with-original-rom-2a5c7ccecba7) has also featured the Microtronic Phoenix project - thanks to Gareth Halfacree!
 
 ![Hackster](pics/hackster.jpg)
