@@ -46,10 +46,14 @@ in an as-authentic-as-possible way.
 cassette interface emulator
 descendant](https://github.com/lambdamikel/microtronic-2095-arduino-emulator)
 that allows for direct upload of programs to the Microtronic (or
-Phoenix) via an Arduino-based USB connection (no SD card required). A
-Python script running on the PC (Mac) transfers MIC files into a
-Microtronic / Phoenix via the `PGM 1` loader program. It uses
-an Arduino nano; this great project can be found [here.](https://github.com/venice1200/Retro/tree/main/Microtronic_Phoenix)
+Phoenix) via an Arduino-based USB connection from the PC (no SD card
+required). On the PC side, a Python script is used to transfer MIC
+files directly into a Microtronic / Phoenix running the `PGM 1`
+program loader. An Arduino Nano is used for the USB connection. Check
+out [the project
+Github](https://github.com/venice1200/Retro/tree/main/Microtronic_Phoenix)
+for more details about this great project. Thanks for sharing it with the
+public, `Venice1200`!
 
 ![Venice1200 2095 Uploader](pics/venice-2095.jpg)
 
