@@ -41,6 +41,18 @@ in an as-authentic-as-possible way.
 
 ## Latest News
 
+- 08-17-2025: [Github user
+`venice1200`](https://github.com/venice1200) has created a [2095
+cassette interface emulator
+descendant](https://github.com/lambdamikel/microtronic-2095-arduino-emulator)
+that allows for direct upload of programs to the Microtronic (or
+Phoenix) via an Arduino-based USB connection (no SD card required). A
+Python script running on the PC (Mac) transfers MIC files into a
+Microtronic / Phoenix via the `PGM 1` loader program. It uses
+an Arduino nano; this great project can be found [here.](https://github.com/venice1200/Retro/tree/main/Microtronic_Phoenix)
+
+![Venice1200 2095 Uploader](pics/venice-2095.jpg)
+
 - 08-12-2025: In the meantime, a number of Makers have successfully
 built their own Phoenix. I am sharing the builds of Venice and Morky
 from the [Classic
