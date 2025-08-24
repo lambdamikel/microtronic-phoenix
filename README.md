@@ -41,6 +41,22 @@ in an as-authentic-as-possible way.
 
 ## Latest News
 
+- 08-23-2025: Phoenix enthusiast 
+[`venice1200`](https://github.com/venice1200) determined how to
+maximize the contrast of the 3661AS LED displays. He is using two
+filters layered on top of each other - a black and a red one. The
+contrast is stunning; see the following pictures for black+red, black
+only, red only, and no filter:
+
+![LED filter black and red](pics/led-both-filters.jpg)
+
+![LED filter black](pics/led-black-filter.jpg)
+
+![LED filter red](pics/led-red-filter.jpg)
+
+![LED filter red](pics/led-no-filter.jpg)
+
+
 - 08-17-2025: [Github user
 `venice1200`](https://github.com/venice1200) has created a [2095
 cassette interface emulator
