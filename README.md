@@ -48,13 +48,13 @@ filters layered on top of each other - a black and a red one. The
 contrast is stunning; see the following pictures for black+red, black
 only, red only, and no filter:
 
-![LED filter black and red](pics/led-both-filters.jpg)
+![LED filter black and red](pics/led-both-filters.jpeg)
 
-![LED filter black](pics/led-black-filter.jpg)
+![LED filter black](pics/led-black-filter.jpeg)
 
-![LED filter red](pics/led-red-filter.jpg)
+![LED filter red](pics/led-red-filter.jpeg)
 
-![LED filter red](pics/led-no-filter.jpg)
+![LED filter red](pics/led-no-filter.jpeg)
 
 
 - 08-17-2025: [Github user
