@@ -41,6 +41,17 @@ in an as-authentic-as-possible way.
 
 ## Latest News
 
+-- 06-08-2026: Using Claude Code (Opus 4.8), we have translated the
+first part of the Microtronic manuals to English! You can find
+the PDF and HTML versions here:
+
+[https://github.com/lambdamikel/microtronic-2090-manuals-english](https://github.com/lambdamikel/microtronic-2090-manuals-english)
+
+![Translated Manual English](./pics/manuals-en-online.png)
+
+Part 2 will follow soon, as well as the "Computerspiele" booklet. 
+
+
 - 10-03-2025: I have written an article about the Busch Microtronic and its
 emulators for the the "LOAD" magazine of the German organization for
 the preservation of classic computers ("Verein zum Erhalt klassischer
