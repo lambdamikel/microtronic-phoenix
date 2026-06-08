@@ -41,7 +41,7 @@ in an as-authentic-as-possible way.
 
 ## Latest News
 
--- 06-08-2026: Using Claude Code (Opus 4.8), we have translated the
+- 06-08-2026: Using Claude Code (Opus 4.8), we have translated the
 first part of the Microtronic manuals to English! You can find
 the PDF and HTML versions here:
 
