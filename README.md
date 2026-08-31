@@ -46,8 +46,6 @@ in an as-authentic-as-possible way.
   I had written for the LOAD retro-computer magazine is available now: 
   [https://github.com/lambdamikel/german-educational-computers-of-the-80s](https://github.com/lambdamikel/german-educational-computers-of-the-80s)
 
-Part 2 of the Microtronic manuals in English is available now: 
-
 - 07-09-2026: Part 2 of the Microtronic manuals in English is available now: 
 
     [https://github.com/lambdamikel/microtronic-2090-manuals-english](https://github.com/lambdamikel/microtronic-2090-manuals-english)
