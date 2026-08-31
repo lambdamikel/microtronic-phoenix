@@ -41,6 +41,17 @@ in an as-authentic-as-possible way.
 
 ## Latest News
 
+- 07-29-2026: A translated and updated all-in-one version of the article series about
+  the German Educational Computer Systems from the 1980s (including the Microtronic and Phoenix) 
+  I had written for the LOAD retro-computer magazine is available now: 
+  [https://github.com/lambdamikel/german-educational-computers-of-the-80s](https://github.com/lambdamikel/german-educational-computers-of-the-80s)
+
+Part 2 of the Microtronic manuals in English is available now: 
+
+- 07-09-2026: Part 2 of the Microtronic manuals in English is available now: 
+
+    [https://github.com/lambdamikel/microtronic-2090-manuals-english](https://github.com/lambdamikel/microtronic-2090-manuals-english)
+
 - 06-08-2026: Using Claude Code (Opus 4.8), we have translated the
 first part of the Microtronic manuals to English! You can find
 the PDF and HTML versions here:
@@ -50,7 +61,6 @@ the PDF and HTML versions here:
 ![Translated Manual English](./pics/manuals-en-online.png)
 
   Part 2 will follow soon, as well as the "Computerspiele" booklet. 
-
 
 - 10-03-2025: I have written an article about the Busch Microtronic and its
 emulators for the the "LOAD" magazine of the German organization for
