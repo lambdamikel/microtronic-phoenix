@@ -41,6 +41,12 @@ in an as-authentic-as-possible way.
 
 ## Latest News
 
+- 09-06-2026: The Busch 2094 "Computerspiele" booklet is now available in English as well -
+  25 games and experiments to program yourself on the Microtronic 2090, from Black Jack and
+  Roulette to a chess clock, a code lock and a prime-number benchmark:
+
+    [https://github.com/lambdamikel/microtronic-2090-manuals-english](https://github.com/lambdamikel/microtronic-2090-manuals-english)
+
 - 07-29-2026: A translated and updated all-in-one version of the article series about
   the German Educational Computer Systems from the 1980s (including the Microtronic and Phoenix) 
   I had written for the LOAD retro-computer magazine is available now: 
