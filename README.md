@@ -314,7 +314,7 @@ op-codes.](https://github.com/lambdamikel/Busch-2090?tab=readme-ov-file#emulator
   turn on or off key beeps.
 
 - 7segment status display: with a suitable 7segment LED display that
-offers controll over the individual digit decimal dots (the NSA 1166
+offers control over the individual digit decimal dots (the NSA 1166
 from National Semiconductors does not, but the TIL 393-6 from TI
 does), the 6digit 7segment display also indicates the CPU emulator
 state, as well as the `CARRY`, `ZERO`, and `1 Hz` CLOCK flags (in
@@ -343,7 +343,7 @@ of the display's main function as the primary visual user interface.
   this also works with the NSA 1166.
   
   Also note that two NSA 1166 / TIL 393-6 adapters are provided in this
-repo (see picture above): one for the [CL3061AG display](gerbers/gerbers-til-display-adapter.zip), and one for the [SH3661AS diplay](gerbers/gerbers-til-display-adapter2.zip). The bubble LED display are getting very hard to source these days.    
+repo (see picture above): one for the [CL3061AG display](gerbers/gerbers-til-display-adapter.zip), and one for the [SH3661AS display](gerbers/gerbers-til-display-adapter2.zip). The bubble LED display are getting very hard to source these days.    
 
 The Neo firmware contains the following `PGM` programs; these are: 
 
@@ -571,7 +571,7 @@ Counter/Oscillator.](https://www.ti.com/lit/ds/symlink/cd4060b.pdf?ts=1741189915
 - R10..R11: 1 k - these should match the CARRY and ZERO LEDs; for modern low-power LEDs such as the ones linked above, 1 k is quite bright (4.7 k might be better)
 - R12: 100 Ohm - should match the buzzer (reduces volume) 
 - R13: 75 Ohm - should match the loudspeaker (reduces volume)
-- R14..R20, R22 : 1 k - shold match the LED display 
+- R14..R20, R22 : 1 k - should match the LED display 
 - R21: 10 k
 - Speaker (optional): https://www.amazon.com/dp/B07LGKSRCK
 - Buzzer (optional): https://www.amazon.com/dp/B01N7NHSY6
