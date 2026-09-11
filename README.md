@@ -62,7 +62,7 @@ the PDF and HTML versions here:
 
     [https://github.com/lambdamikel/microtronic-2090-manuals-english](https://github.com/lambdamikel/microtronic-2090-manuals-english)
 
-![Translated Manual English](./pics/manuals-en-online.png)
+  ![Translated Manual English](./pics/manuals-en-online.png)
 
   Part 2 will follow soon, as well as the "Computerspiele" booklet. 
 
@@ -145,11 +145,11 @@ Forum here:
 
   ![Linkedin](pics/linkedinpost.jpg)
 
-![Linkedin 2](pics/linkedinpost2.jpg)
+  ![Linkedin 2](pics/linkedinpost2.jpg)
 
-![XPost](pics/xpost.jpg)
+  ![XPost](pics/xpost.jpg)
 
-![Hackaday Featured](pics/featured.jpg)
+  ![Hackaday Featured](pics/featured.jpg)
 
 - 04-12-2025: All Firmware variants uploaded ("Phoenix", "Neo Only", "Phoenix Only"). 
 
