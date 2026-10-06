@@ -53,6 +53,8 @@ in an as-authentic-as-possible way.
 
     Source code: [https://github.com/lambdamikel/microtronic-emulator](https://github.com/lambdamikel/microtronic-emulator)
 
+  ![Microtronic Emulator](https://github.com/lambdamikel/microtronic-emulator/raw/main/screenshot.png)
+
 - 09-06-2026: The Busch 2094 "Computerspiele" booklet is now available in English as well -
   25 games and experiments to program yourself on the Microtronic 2090, from Black Jack and
   Roulette to a chess clock, a code lock and a prime-number benchmark:
