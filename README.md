@@ -41,6 +41,18 @@ in an as-authentic-as-possible way.
 
 ## Latest News
 
+- 10-05-2026: A Microtronic emulator that runs in your web browser is now online. It runs the original
+  1981 firmware ROM on an emulated TMS1600, with the program RAM, display, keypad, inputs,
+  outputs and 1 Hz clock modelled at pin level behind a console drawn from photos of the real
+  machine, and it comes with a library of programs from the manuals. Everybody can now
+  experience the Microtronic - there is nothing to build, and nothing to load or install on
+  your computer: just open the page. Made with Claude Code (Opus 5.5).
+  It uses the same firmware ROM as the Phoenix, with Jason's TMS1xxx emulator as the reference for the CPU.
+
+    **[https://lambdamikel.github.io/microtronic-emulator/](https://lambdamikel.github.io/microtronic-emulator/)**
+
+    Source code: [https://github.com/lambdamikel/microtronic-emulator](https://github.com/lambdamikel/microtronic-emulator)
+
 - 09-06-2026: The Busch 2094 "Computerspiele" booklet is now available in English as well -
   25 games and experiments to program yourself on the Microtronic 2090, from Black Jack and
   Roulette to a chess clock, a code lock and a prime-number benchmark:
