@@ -59,7 +59,8 @@ in an as-authentic-as-possible way.
   running the original firmware on his TMS1xxx emulator, which the Phoenix runs to this day; and
   Michael designed the PCB and integrated the software. Thank you, Jason and Decle!
 
-  Two more of my projects received honorable mentions in the "Old Iron" category:
+  Three more of my projects received honorable mentions in the "Old Iron" category:
+  the [Laser VZ-200 Lazarus Daughter Board](https://hackaday.io/project/204602-laser-vz-200-lazarus-daughter-board),
   [Towers of Hanoi meet the Kosmos CP1 in the Matrix](https://hackaday.io/project/206090-towers-of-hanoi-meet-the-kosmos-cp1-in-the-matrix)
   and [Scope Vector Graphics with the Philips MC6400](https://hackaday.io/project/206059-scope-vector-graphics-with-the-philips-mc6400).
 
