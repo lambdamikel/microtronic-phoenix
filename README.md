@@ -43,6 +43,26 @@ in an as-authentic-as-possible way.
 
 ## Latest News
 
+- 11-04-2026: The Microtronic Phoenix won **second place** in the
+  [2026 Hackaday Retrocomputing Challenge](https://hackaday.io/contest/206399-retrocomputing-contest)!
+  In the [announcement of the winners](https://hackaday.com/2026/11/04/yesterday-has-never-looked-this-good-feast-your-eyes-on-the-2026-retrocomputing-challenge-winners/),
+  Jenny List points out that, unlike other Microtronic emulators, the Phoenix runs the original
+  firmware, and the judges write: *"The attention to detail and skill required to make it do its
+  job so accurately by persuading a 1970s microcontroller to reveal its secrets is what makes this
+  project special, and you can count us impressed by it."*
+
+  This prize is a testament to our collaboration: Decle and Michael found how to put the TMS1600
+  into its test mode and read out the first version of the ROM, with Decle's TMS1xxx dumping
+  technology; Jason analyzed and corrected the dump and built the first breadboard Microtronic
+  running the original firmware on his TMS1xxx emulator, which the Phoenix runs to this day; and
+  Michael designed the PCB and integrated the software. Thank you, Jason and Decle!
+
+  Two more of my projects received honorable mentions in the "Old Iron" category:
+  [Towers of Hanoi meet the Kosmos CP1 in the Matrix](https://hackaday.io/project/206090-towers-of-hanoi-meet-the-kosmos-cp1-in-the-matrix)
+  and [Scope Vector Graphics with the Philips MC6400](https://hackaday.io/project/206059-scope-vector-graphics-with-the-philips-mc6400).
+
+  ![The Phoenix in Hackaday's announcement of the winners](pics/hackaday-retro-2026.jpg)
+
 - 10-05-2026: A Microtronic emulator that runs in your web browser is now online. It runs the original
   1981 firmware ROM on an emulated TMS1600, with the program RAM, display, keypad, inputs,
   outputs and 1 Hz clock modelled at pin level behind a console drawn from photos of the real
