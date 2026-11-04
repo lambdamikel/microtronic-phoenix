@@ -44,7 +44,9 @@ in an as-authentic-as-possible way.
 ## Latest News
 
 - 11-04-2026: The Microtronic Phoenix won **second place** in the
-  [2026 Hackaday Retrocomputing Challenge](https://hackaday.io/contest/206399-retrocomputing-contest)!
+  [2026 Hackaday Retrocomputing Challenge](https://hackaday.io/contest/206399-retrocomputing-contest),
+  out of 230 entries submitted between August 18 and October 27, 2026 - a large field with many
+  strong projects!
   In the [announcement of the winners](https://hackaday.com/2026/11/04/yesterday-has-never-looked-this-good-feast-your-eyes-on-the-2026-retrocomputing-challenge-winners/),
   Jenny List points out that, unlike other Microtronic emulators, the Phoenix runs the original
   firmware, and the judges write: *"The attention to detail and skill required to make it do its
